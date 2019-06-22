@@ -1,0 +1,153 @@
+<block wx:if="{{type=='staff'}}">
+  <view class='lineTop'></view>
+  <view class='homepage'>
+    <view class='content'>
+      <view class='card'>
+        <view class='photo'>
+          <image src='../../icons/myphoto.png' style='width:180rpx;height:240rpx;border-radius:5rpx;'></image>
+        </view>
+        <view class='staffInfo'>
+          <view class='privateInfo'>
+            <view class='name'>
+              {{myInfo.name}}
+            </view>
+            <image src='../../icons/takephone.png' class='phone-icon'></image>
+            <view class='phone'>
+              {{myInfo.phone}}
+            </view>
+          </view>
+          <view class='publicInfo'>
+            <view class='jobNumberIcon'>
+              工号
+            </view>
+            <view class='jobNumber'>
+              {{myInfo.jobNumber}}
+            </view>
+          </view>
+          <view class='company'>
+            {{myInfo.company}}
+          </view>
+          <view class='position'>
+            {{myInfo.position}}
+          </view>
+        </view>
+      </view>
+
+      <view class='linkList'>
+        <view class='link-item' data-type="visited" bindtap='toPage'>
+          <view class='title'>
+            来访处理
+          </view>
+          <view class='rightPoint'>
+          </view>
+        </view>
+
+        <view class='link-item' data-type="invited" bindtap='toPage'>
+          <view class='title'>
+            邀请记录
+          </view>
+          <view class='rightPoint'>
+            
+          </view>
+
+          
+        </view>
+      </view>
+
+      <view class='calendar'>
+        <view style='margin-top:40rpx;'>
+          <view class=''>
+            <picker class='date' mode="date" value="{{date}}" fields="month" start="2000-01" end="2099-12" bindchange="bindDateChange">
+              <view style='display:flex;align-item:center;'>
+                <view>{{dateTime.year}}年{{dateTime.month}}月</view>
+                <view class="date-inner"></view>
+              </view>
+            </picker>
+
+          </view>
+        </view>
+        <view class='calendar-info'>
+          <view class='dian'></view>
+          <view class='zhengchang'>正常</view>
+          <view class='zhengchangNumber'>{{zhengchangNumber}}天</view>
+          <view class='yueli'>
+            <view style="display:flex;justify-content: flex-end;">
+              <view bindtap='yueli'>月历</view>
+              <view bindtap='yueli' class="arrow {{yueliHidden?'view-arrow-out':'view-arrow-in'}}"></view>
+            </view>
+          </view>
+        </view>
+        <view class="calendar-view {{yueliHidden?'view-narrow-out':'view-narrow-in'}}">
+          <view class='calendar-fine'>
+            <view class="weekList {{index%7==0||index%7==6?'darkText':''}} {{index%7==6?'smallText':''}}" wx:for="{{weekList}}" wx:key="{{index}}">
+              <view style='width:46rpx;text-align:center;'>
+                {{item.title}}
+              </view>
+            </view>
+            <view class="dayList {{index%7==0||index%7==6?'darkText':''}} {{index%7==6?'smallText':''}}" wx:for="{{dayList}}" wx:key="{{index}}">
+              <view class='dayNumber' style="{{item.isToday?'background:rgba(62,132,255,1);border-radius:50%':''}}">
+                {{item.day}}
+              </view>
+              <view class='spot' style="background:{{item.isBlue?'rgba(62,132,255,1)':(item.isOrange?'rgba(255,159,54,1)':(item.isGreen?'rgba(76,196,82,1)':''))}};">
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="turnover_container">
+          <view class="turnover_title">进出记录</view>
+          <block wx:for="{{turnoverRecordList}}" wx:key="{{index}}">
+            <view class="turnover_record">
+              <view class="record_item">
+                <text class="note {{item.note=='进'?'enter':'out'}}">{{item.note}}</text>
+                <text class="time">{{item.time}}</text>
+                <text class="door">{{item.door}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+
+        <block wx:if="{{!loading}}">
+          <view class="loadmore" bindtap='loadMore'>
+            查看更多
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </view>
+        </block>
+        <block wx:if="{{loading}}">
+          <view class="weui-loadmore">
+            <view class="loadmore_text">正在加载更多</view>
+            <view class="weui-loading"></view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{type=='visitor'}}">
+  <view class='hd'></view>
+  <view>
+    <view class='mine_hd'>
+      <image src='../../icons/yangkeke.png' mode='widthFix'></image>
+      <view class='visitor_name'>杨可可</view>
+    </view>
+    <view>
+      <view class="fuc" bindtap='sendRecord'>
+        <view>申访记录</view>
+        <view class='rightPoint'></view>
+      </view>
+      <view class="fuc" bindtap='sendInvited'>
+        <view>受邀记录</view>
+        <view class='rightPoint'></view>
+      </view>
+      <view class="fuc" bindtap='sendInformation'>
+        <view>实名信息</view>
+        <view class='rightPoint'></view>
+      </view>
+
+    </view>
+
+  </view>
+</block>
+
+<Return></Return>

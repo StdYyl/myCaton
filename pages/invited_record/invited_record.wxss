@@ -1,0 +1,30 @@
+.body{
+  padding: 26rpx 30rpx 0 30rpx;
+}
+.every_mes{
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.every_mes image{
+  width: 100%;
+  vertical-align: bottom;
+}
+.mes{
+  position: absolute;
+  top: 58rpx;
+  left: 58rpx;
+}
+.name{
+  color: #333333;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.user{
+  color: #333333;
+  font-size: 30rpx;
+  padding-bottom: 22rpx;
+}
+.phone{
+  font-size: 26rpx;
+  color: #666666;
+}

@@ -1,0 +1,59 @@
+.body{
+  margin: 0 40rpx;
+}
+.usermes{
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0 34rpx 0; 
+  border-bottom: 1rpx solid #EEEEEE;
+  margin-bottom: 30rpx;
+}
+.usermes image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.name{
+  color: #3E84FF;
+  font-weight: bold;
+  padding-bottom: 18rpx;
+}
+.reason{
+  padding-bottom: 10rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+.reason_mes{
+  font-size: 30rpx;
+  color: #333333;
+}
+.date view{
+  color: #999999;
+  font-size: 28rpx;
+  padding-bottom: 27rpx;
+}
+.date text{
+  color: #333333;
+  font-size: 30rpx;
+}
+.sure{
+  margin-top: 450rpx;
+  flex: 1;
+  text-align: center;
+  color: white;
+  background: #3E84FF;
+  padding: 20rpx 0;
+  box-shadow:0px 7px 10px 0px rgba(62,132,255,0.4);
+  border-radius: 48rpx;
+}
+.reject{
+  flex: 1;
+  margin-top: 30rpx;
+  border-radius: 48rpx;
+  padding: 20rpx 0;
+  color: #666666;
+  box-shadow:0px 7px 10px 0px rgba(237,237,237,1);
+  border:1rpx solid rgba(238,238,238,1);
+  box-sizing: border-box;
+  background: #EDEDED;
+  text-align: center;
+}

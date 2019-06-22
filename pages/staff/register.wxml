@@ -1,0 +1,79 @@
+<!--pages/register.wxml-->
+<view class='apply'>
+  <view class='top-line'></view>
+  <view class='content'>
+    <view class="take-photo" bindtap='takePhoto'>
+      <view wx:if="{{!isChoose}}" style='margin:0 auto;'>
+        <view class='icon-shao'>
+          <image src='../../icons/Group_2.png'></image>
+        </view>
+        <view class='icon-title'>
+          拍摄本人照片
+        </view>
+      </view>
+      <image wx:if="{{isChoose}}" src='{{photoPath}}' mode='aspectFit' style='width:100%;height:100%;'></image>
+    </view>
+
+
+    <view class='list-input'>
+      <view class='item-input'>
+        <view class='input-content'>
+          <view class='content-title'>
+            姓名：
+          </view>
+          <view class='content-input'>
+            <input type='text' bindinput='inputvalue' data-key="username" placeholder-style='color:rgba(187,187,187,1);font-size:26rpx;' placeholder='请输入姓名' value="{{username}}"></input>
+          </view>
+        </view>
+      </view>
+      <view class='item-input'>
+        <view class='input-content'>
+          <view class='content-title'>
+            手机号：
+          </view>
+          <view class='content-input'>
+            <input type='number' bindinput='inputvalue' data-key="phone" placeholder-style='color:rgba(187,187,187,1);font-size:26rpx;' placeholder='请输入手机号' value="{{phone}}"></input>
+          </view>
+        </view>
+      </view>
+      <view class='item-input' style='display:flex;'>
+        <view class='input-content'>
+          <view class='content-title'>
+            验证码：
+          </view>
+          <view class='content-input'>
+            <input type='number' bindinput='inputvalue' data-key="verificationCode" placeholder-style='color:rgba(187,187,187,1);font-size:26rpx;' style='text-align:left;' placeholder='请填写验证码' value="{{verificationCode}}"></input>
+          </view>
+        </view>
+        <view class='verification'>
+          <button bindtap="{{isDownning?'':'getVerificationCode'}}" class="verification-button {{countDown>0?'darkBackground':''}}">
+            {{countDown>0?countDown:"获取验证码"}}
+          </button>
+        </view>
+      </view>
+      <view class='item-input'>
+        <view class='input-content'>
+          <view class='content-title'>
+            车牌号：
+          </view>
+          <view class='province'>
+            <view class='province-content'>
+              <picker bindchange="provinceChange" value="{{provinceIndex}}" range="{{provinceList}}" range-key='name'>
+                {{provinceList[provinceIndex].name}}
+              </picker>
+            </view>
+          </view>
+          <view class='content-input'>
+            <input type='text' bindinput='inputvalue' data-key="carId" placeholder-style='color:rgba(187,187,187,1);font-size:26rpx;' placeholder='请输入车牌号' value="{{carId}}"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='register'>
+      <button class='register-button' bindtap='register'>
+        注册
+      </button>
+    </view>
+  </view>
+</view>

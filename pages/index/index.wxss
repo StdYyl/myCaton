@@ -1,0 +1,83 @@
+.firstpage_container{
+  height: 100%;
+  border-top: 2rpx solid rgba(221, 221, 221, 1);
+}
+
+.f_c_top{
+
+}
+
+.top_img{
+  padding: 74rpx 96rpx 64rpx 106rpx;
+}
+
+.top_img image{
+  width: 100%;
+}
+
+.select_bgc{
+
+}
+
+.select_text{
+  padding: 44rpx 275rpx 8rpx 275rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #BBBBBB;
+}
+
+.wrap{
+  height: 134rpx;
+}
+
+.enterance{
+  position: relative;
+  padding: 26rpx 126rpx 22rpx 126rpx;
+  margin: 0 40rpx;
+  bottom: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16rpx;
+  box-shadow: 0 6rpx 20rpx rgba(145, 145, 145, 0.2); 
+}
+
+.enterance_center{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display: flex;
+  -webkit-box-justify:center;
+  -webkit-justify-content:center;
+  justify-content: space-between;
+}
+
+.enterance_center view{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items: center;
+}
+
+.enterance_center view image{
+  width: 88rpx;
+}
+
+.enterance_center view view{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 12rpx;
+}
+
+.swiper_container{
+  padding: 130rpx 40rpx 248rpx 40rpx;
+}
+
+swiper{
+  height: 206rpx;
+}
+
+.swiper_item image{
+  width: 100%;
+}

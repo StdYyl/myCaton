@@ -1,0 +1,14 @@
+<view class="hd"></view>
+<view class='body'>
+  <view class='every_mes' wx:for="{{mesList}}" wx:key="{{index}}" bindtap='inviterMes'>
+    <image src='../../icons/Group_bg.png' mode='widthFix'></image>
+    <view class='mes'>
+      <view class='name'>{{item.title}}</view>
+      <view class='user'>{{item.department}}[{{item.user}}]邀您来访</view>
+      <view class='phone'>联系方式：{{item.phone}}</view>
+      <view class='phone'>地址：{{item.address}}</view>
+    </view>
+  </view>
+
+
+</view>

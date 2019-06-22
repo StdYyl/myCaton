@@ -1,0 +1,69 @@
+<view class="hd"></view>
+<view class='body_bc'>
+  <view class='body'>
+    <view>
+      <view class='reason'>来访事由：</view>
+      <view class='reason_input'>
+        <textarea placeholder='不超过15个字' maxlength='15' placeholder-style='color:#BBBBBB' class='reason_mes' bindinput='reason_text'></textarea>
+      </view> 
+    </view>
+    <view class='mes'>
+      <view>来访日期：</view>
+      <picker mode="date" value='{{date}}' bindchange='changeDate'>
+        <view class='inputs'>{{form.choseTime}}
+          <text class='rightPoint' wx:if="{{form.choseTime == '请选择日期'}}"></text>
+        </view>
+      </picker>
+    </view>
+    <view class='mes'>
+      <view>开始时间：</view>
+      <picker mode="time" value='12:00' bindchange='changeBeginTime'>
+      <view class='inputs'>{{form.beginTime}}
+        <text class='rightPoint' wx:if="{{form.beginTime == '选择开始时间'}}"></text>
+      </view>
+      </picker> 
+    </view>
+    <view class='mes mes_center'>
+      <view>结束时间：</view>
+      <picker mode="time" value='12:00' bindchange='changeEndTime'>
+        <view class='inputs'>{{form.endTime}}
+          <text class='rightPoint' wx:if="{{form.endTime == '选择结束时间'}}"></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='body bodys'>
+    <view class='mes'>
+      <view>被访人：</view>
+      <view class='inputs'>
+        <input class='inputed' placeholder="请输入姓名 " placeholder-style='color:#BBBBBB' bindinput='bindName'></input>
+      </view>
+    </view>
+    <view class='mes'>
+      <view>所属部门：</view>
+      <view class='inputs'>
+        <input class='inputed' placeholder="请输入所属部门 " placeholder-style='color:#BBBBBB' bindinput='bindDepartment'></input>
+      </view>
+    </view>
+    <view class='mes'>
+      <view>被访人联系方式：</view>
+      <view class='inputs'>
+        <input class='inputed' placeholder="请输入联系方式 " placeholder-style='color:#BBBBBB' bindinput='bindTel'></input>
+      </view>
+    </view>
+  </view>
+  <view class='usered'>
+    <view class='interviewee'>
+      <view class='intervieweeImg'>
+        <image src='../../icons/yangkeke.png'></image>
+      </view>
+      <view class='user'>
+        <view class='userName'>杨可可</view>
+        <view>
+          <text class='userId'>员工</text>654263</view>
+        <view class='manager'>设计部经理</view>
+      </view>
+    </view>
+  </view>
+  <view class='send' bindtap='bindSubmit'>提交申请</view>
+</view>

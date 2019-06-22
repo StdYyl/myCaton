@@ -1,0 +1,339 @@
+/* pages/staff/homepage.wxss */
+
+.lineTop {
+  border-top: 1px solid rgba(221, 221, 221, 1);
+}
+
+.content {
+  padding: 0 24rpx;
+}
+
+.card {
+  margin: 41rpx 16rpx 34rpx 16rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 5rpx 15rpx 0rpx rgba(153, 153, 153, 0.2);
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 24rpx 34rpx;
+}
+
+.staffInfo {
+  margin-left: 41rpx;
+  margin-top: 3rpx;
+  height: 240rpx;
+  flex: 1;
+}
+
+.privateInfo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  margin-top: 3rpx;
+}
+
+.privateInfo .name {
+  color: rgba(51, 51, 51, 1);
+  line-height: 53rpx;
+  font-size: 38rpx;
+  height: 53rpx;
+  position: absolute;
+  left: 0;
+}
+
+.privateInfo .phone-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 6rpx;
+}
+
+.privateInfo .phone {
+  height: 33rpx;
+  font-size: 24rpx;
+  color: rgba(102, 102, 102, 1);
+  line-height: 33rpx;
+}
+
+.publicInfo {
+  display: flex;
+  margin-top: 27rpx;
+  align-items: center;
+}
+
+.publicInfo .jobNumberIcon {
+  height: 32rpx;
+  background: rgba(62, 132, 255, 1);
+  border-radius: 3rpx;
+  line-height: 32rpx;
+  font-size: 20rpx;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  padding: 0 7rpx;
+}
+
+.publicInfo .jobNumber {
+  height: 40rpx;
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.company {
+  height: 33rpx;
+  font-size: 24rpx;
+  color: rgba(102, 102, 102, 1);
+  line-height: 33rpx;
+  margin-top: 21rpx;
+}
+
+.position {
+  height: 33rpx;
+  font-size: 24rpx;
+  color: rgba(102, 102, 102, 1);
+  line-height: 33rpx;
+  margin-top: 1rpx;
+}
+
+.linkList .link-item {
+  margin-top: 18rpx;
+  font-size: 30rpx;
+  padding: 0 4rpx 21rpx 0;
+  border-bottom: 1rpx solid rgba(238, 238, 238, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42rpx;
+  color: rgba(51, 51, 51, 1);
+  line-height: 42rpx;
+}
+
+.date {
+  height: 42rpx;
+  font-size: 34rpx;
+  font-family: DINCondensed-Bold;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  line-height: 41rpx;
+  display: inline-block;
+}
+
+.date-inner {
+  width: 20rpx;
+  height: 20rpx;
+  border: 1rpx solid #bbb;
+  border-left: transparent;
+  border-top: transparent;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: -6rpx;
+  left: 10rpx;
+  border-radius: 1rpx;
+}
+
+.calendar-info {
+  display: flex;
+  align-items: center;
+  margin-top: 17rpx;
+}
+
+.calendar-info .dian {
+  width: 8rpx;
+  height: 8rpx;
+  background: rgba(62, 132, 255, 1);
+  border-radius: 50%;
+}
+
+.calendar-info .zhengchang {
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+  margin-left: 7rpx;
+}
+
+.calendar-info .zhengchangNumber {
+  font-size: 28rpx;
+  color: rgba(62, 132, 255, 1);
+  margin-left: 8rpx;
+}
+
+.calendar-info .yueli {
+  flex: 1;
+  text-align: right;
+  font-size: 26rpx;
+  color: rgba(62, 132, 255, 1);
+  margin-right: 20rpx;
+}
+
+.calendar-info .yueli .arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border: 1rpx solid #bbb;
+  border-left: transparent;
+  border-top: transparent;
+  transform: rotate(45deg);
+  margin-left: 10rpx;
+  position: relative;
+  bottom: -5rpx;
+  border-radius: 1rpx;
+}
+
+.calendar-view {
+  margin-top: 18rpx;
+  overflow: hidden;
+  width: 750rpx;
+  position: relative;
+  left: -24rpx;
+}
+
+.calendar-fine {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(245, 245, 245, 1);
+  padding: 20rpx 66rpx 0;
+  box-sizing:border-box;
+  color:rgba(51,51,51,1);
+}
+.calendar-fine .weekList{
+  margin-bottom: 16rpx;
+  width: 95rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size:24rpx;
+}
+
+.calendar-fine .dayList{
+  width: 95rpx;
+  height: 54rpx;
+  padding-bottom: 20rpx;
+}
+.calendar-fine .dayList .dayNumber{
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 28rpx;
+  text-align: center;
+  margin-bottom: 2rpx;
+}
+.calendar-fine .dayList .spot{
+  width: 6rpx;
+  height: 6rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+}
+.calendar-fine .darkText{
+  color:rgba(153,153,153,1);
+}
+.calendar-fine .smallText{
+  width: 46rpx;
+}
+
+.turnover_container{
+  padding: 36rpx 0 0 0;
+}
+
+.turnover_title{
+  font-size: 32rpx;
+  line-height: 46rpx;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 38rpx;
+  font-weight: 600;
+}
+
+.turnover_record{
+}
+
+.record_item{
+  display: flex;
+  padding: 28rpx 0 28rpx 26rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid rgba(238, 238, 238, 1);
+}
+
+.record_item>text{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* .note ~ text{
+  margin-left: 77rpx;
+} */
+
+text.note{
+  display: flex;
+  align-items: center;
+  padding: 0 6rpx;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.enter{
+  background: rgba(62, 132, 255, 1);
+}
+
+.out{
+  background: #F6C600;
+}
+
+text.door{
+  width: 200rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+  text-align: right;
+}
+
+.loadmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24rpx 0;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: rgba(187, 187, 187, 1);
+}
+
+view.weui-cell__ft_in-access{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+view.weui-cell__ft{
+  top: -10rpx;
+  margin-left: 4rpx;
+}
+
+/*访客*/
+.mine_hd{
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 41rpx 0 37rpx 0;
+}
+.mine_hd image{
+  width: 126rpx;
+  /* height: 126rpx; */
+  border-radius: 50%;
+}
+.visitor_name{
+  font-size: 30rpx;
+  color: #666666;
+  padding-top: 17rpx;
+}
+.fuc{
+  padding: 31rpx 0 24rpx 0;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #EEEEEE;
+  color: #333333;
+  font-size: 30rpx;
+}

@@ -1,0 +1,22 @@
+<view class="hd"></view>
+<view class='body'>
+  <view class='mes'>
+    <view class='every_mes'>
+      <view>姓名：</view>
+      <view>可可杨</view>
+    </view>
+    <view class='every_mes'>
+      <view>手机号：</view>
+      <view>1234561234</view>
+    </view><view class='every_mes'>
+      <view>单位：</view>
+      <view>pandek科技</view>
+    </view><view class='every_mes'>
+      <view>照片：</view>
+      <view>
+        <image src='../../icons/yangkeke.png'></image>
+      </view>
+    </view>
+  </view>
+
+</view>

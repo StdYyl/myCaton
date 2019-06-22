@@ -1,0 +1,119 @@
+page{
+  background: #F5F5F5;
+}
+
+.invitedRecord_Container{
+
+}
+
+.handle{
+  position: relative;
+  width: 100%;
+  display: flex;
+  display:-webkit-box;
+  display:-webkit-flex;
+  border-top:2rpx solid #DDDDDD;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #333333;
+  background: #FFFFFF;
+}
+
+.pending{
+  padding: 26rpx 0;
+  display: flex;
+  flex: 1;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid #FFFFFF;
+}
+
+.processed{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid #FFFFFF;
+}
+
+.selectedStyle{
+  color: #3E84FF;
+}
+
+.recording{
+  padding: 0 24rpx 0 38rpx;
+  background: #FFFFFF;
+  margin-top: 16rpx;
+}
+
+.recording~.recording{
+  margin-top: 2rpx;
+}
+
+.record_item{
+  width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-box-justify: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  flex: 1;
+  padding: 30rpx 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.before{
+  display: flex;
+  align-items: center;
+}
+
+.nickname{
+  padding: 16rpx 8rpx;
+  background: #3E84FF;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 24rpx;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.top{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: #333333;
+}
+
+.time{
+  
+}
+
+.bottom{
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #666666;
+  margin-block-end: 2rpx;
+}
+
+.after{
+  display: flex;
+  font-size: 26rpx;
+  line-height: 32rpx;
+  color: #999999;
+}
+
+.record_divider{
+  border-bottom: 2rpx solid #EEEEEE;
+  width: 100%;
+}

@@ -1,0 +1,46 @@
+<view class="hd"></view>
+<view class='body'>
+  <view class='bc' bindtap='chooseImg'>
+    <block wx:if='{{form.imageSrc==""}}'>
+      <image src='../../icons/camera.png'></image>
+      <view>自拍人脸照片</view>
+    </block>
+    <block wx:else>
+      <image src='{{form.imageSrc}}' mode='aspectFit' style='width:100%;height:100%;'></image>
+    </block>
+  </view>
+  <view>
+    <view class='mes'>
+      <view>姓名：</view>
+      <view><input placeholder="请输入姓名" class='inputs' placeholder-style='color:#BBBBBB;font-size:26rpx' bindinput='maxLenth' ></input></view>
+    </view>
+    <view class='mes'>
+      <view>身份证号：<text>(选填)</text></view>
+      <view><input placeholder="请输入身份证号" class='inputs' placeholder-style='color:#BBBBBB;font-size:26rpx' bindinput="bindID" ></input></view>
+    </view>
+
+    <view class='mes'>
+      <view>手机号：</view>
+      <view><input placeholder="请输入手机号" class='inputs' placeholder-style='color:#BBBBBB;font-size:26rpx' bindinput='bindPhone'></input></view>
+    </view>
+
+    <view class='mes'>
+      <view>单位/住址：</view>
+      <view><input placeholder="请输入地址信息" class='inputs' placeholder-style='color:#BBBBBB;font-size:26rpx' bindinput="bindAddress"></input></view>
+    </view>
+
+    <view class='mes'>
+      <view class='car'>
+        <view>车牌号：</view>
+        <picker value='{{index}}' range='{{province}}' bindchange='bindchangeIndex'>
+          <view class='province'>{{province[index]}}</view>
+        </picker>
+        
+      </view>
+      <view>
+        <input placeholder="请输入车牌号" class='inputs' placeholder-style='color:#BBBBBB;font-size:26rpx' bindinput='maxLenth' bindblur='bindcarID'></input>
+      </view>
+    </view>
+  </view>
+  <view class='next' bindtap='next'>下一步</view>
+</view>

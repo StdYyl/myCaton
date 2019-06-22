@@ -1,0 +1,25 @@
+<view class="hd"></view>
+<view class='bc'>
+  <view class='every_mes' wx:for="{{title}}" wx:key="*this">
+    <view class='sub' bindtap='transform' data-id='{{index}}'>
+      <text class='{{isShowed[index] && "tran90"}} icon'></text>
+      <view>{{item}}</view>
+    </view>
+    <view class='{{isShow[index]?"out_height":"hid_height"}}' >
+      <view class='{{isShowed[index]?"out":"hid"}} animate'>
+        <view class='detail ' wx:for="{{submitMes[index]}}" wx:for-index="id" wx:key="{{id}}" wx:for-item="its">
+          <view class='mes font_s'>
+            <view>访问时间:
+              <text class='time'>{{its.data}} {{its.time}}</text>
+            </view>
+            <view class='time change' wx:if="{{index == 0}}" data-id='{{its.id}}' bindtap='bindModify'>修改</view>
+            <view class='time endTime' wx:if="{{index == 1}}">倒计时15分钟</view>
+          </view>
+          <view class='font_s mes_pd' >被访人:
+            <text class='time'>{{its.interviewee}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="hd"></view>
+<view class='body'>
+  <image src='../../icons/Groups.png' mode='widthFix'></image>
+  <view class='mes_bd'>
+    <view class='mes'>
+      <view class='title'>北京凯盛文化传播有限公司</view>
+      <view class='inviter'>产品[赵大同]邀您来访</view>
+      <view class='mes'>联系方式：18212314123</view>
+      <view class='mes'>地址：北京市朝阳区胡同里街102号</view>
+      <view class='pc'>
+        <image src='../../icons/Combined Shape.png'></image>
+        <view>拍摄人脸照片</view>
+      </view>
+    </view>
+    <view class='enter_dashed'></view>
+    <view class='invited'>
+      <view class='mes_left'>
+        <view>姓名：</view>
+        <view>联系方式：</view>
+        <view>开始时间：</view>
+        <view>结束时间：</view>
+        <view>来访事由：</view>
+      </view>
+      <view class='mes_right'>
+        <view>刘珍</view>
+        <view>12345612312</view>
+        <view>2019-02-15 18:00</view>
+        <view>2019-02-15 19:00</view>
+        <view>诚邀参加座谈大会</view>
+      </view>
+    </view>
+  </view>
+  <view class='sure' bindtap='ensure'>确定</view>
+</view>

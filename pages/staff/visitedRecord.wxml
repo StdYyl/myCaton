@@ -1,0 +1,46 @@
+<view class="invitedRecord_Container">
+  <view class="handle">
+      <view class="pending {{index==0?'selectedStyle':''}}" data-index="0" bindtap='changeUnderline'>待处理</view>
+      <view class="processed {{index==1?'selectedStyle':''}}" data-index="1" bindtap='changeUnderline'>已处理</view>
+      <view class="weui-navbar__slider" style='left: {{sliderLeft}}rpx; transform: translateX({{sliderOffset}}rpx); -webkit-transform: translateX({{sliderOffset}}rpx);'></view>
+  </view>
+  <block wx:if="{{index==0}}">
+    <block wx:for="{{visitedList}}" wx:key="{{index}}">
+      <view class="recording food-item" bindtap='turnToDetail' data-id="{{item.id}}" data-type="processed">
+        <view class="record_item">
+          <view class="before">
+            <view class="nickname">{{item.nickname}}</view>
+            <view class="info">
+              <view class="top">
+                {{item.visitor}}
+              </view>
+              <view class="bottom">{{item.reason}}</view>
+            </view>
+          </view>
+          <view class="after">{{item.day}}</view>
+        </view>
+      </view>
+    </block>
+  </block>
+
+  <block wx:if="{{index==1}}">
+    <block wx:for="{{visitedList}}" wx:key="{{index}}">
+      <view class="recording food-item" bindtap='turnToDetail' data-id="{{item.id}}" data-type="pending">
+        <view class="record_item">
+          <view class="before">
+            <view class="nickname">{{item.nickname}}</view>
+            <view class="info">
+              <view class="top">
+                {{item.visitor}}
+              </view>
+              <view class="bottom">{{item.reason}}</view>
+            </view>
+          </view>
+          <view class="after">{{item.day}}</view>
+        </view>
+      </view>
+    </block>
+  </block>
+
+  
+</view>

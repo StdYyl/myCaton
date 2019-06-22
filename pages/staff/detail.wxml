@@ -1,0 +1,20 @@
+<view class="hd"></view>
+<view class='body'>
+  <view class='usermes'>
+    <view>
+      <view class='name'>{{visitedList[transId-1].visitor}}</view>
+      <view class='reason'>来访事由：</view>
+      <view class='reason_mes'>{{visitedList[transId-1].reason}}</view>
+    </view>
+    <image src='../../icons/yangkeke.png'></image>
+  </view>
+  <view class='date'>
+    <view>来访时间：<text>{{visitedList[transId-1].day}} {{visitedList[transId-1].hour}}</text></view>
+    <view>联系方式：<text>{{visitedList[transId-1].tel}}</text></view>
+  </view>
+  <block wx:if="{{isHandle=='processed'}}">
+    <view class='sure' bindtap='handle' data-type='agree'>同意</view>
+    <view class='reject' bindtap='handle' data-type='reject'>拒绝</view>
+  </block>
+
+</view>

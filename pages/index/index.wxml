@@ -1,0 +1,45 @@
+<view class="firstpage_container">
+  <view class="f_c_top">
+    <view class="top_img">
+      <image src="../../icons/Group9.png" mode="widthFix"></image>
+    </view>
+    
+  </view>
+  <view class="select_bgc" style="">
+    <view class="select_text">请选择身份登录</view>
+    <view class="wrap" style="background:url({{background}}) center center /cover no-repeat;"></view>
+    
+  </view>
+
+  <view class="enterance">
+    <view class="enterance_center">
+      <view class="staff_enterance" bindtap='turnPage' data-sort="staff">
+        <image src="../../icons/Group5.png" mode="widthFix"></image>
+        <view>员工入口</view>
+      </view>
+      <view class="visitor_enterance" bindtap='turnPage' data-sort="visitor">
+        <image src="../../icons/Group2.png" mode="widthFix"></image>
+        <view>访客入口</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="f_c_bottom">
+    <view class="swiper_container">
+      <swiper indicator-dots="{{true}}" indicator-color="#5296F7" indicator-active-color="#fff"
+  autoplay="{{true}}" interval="{{2000}}" duration="{{1000}}">
+        <swiper-item class="swiper_item">
+          <image src="../../icons/Group10.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+
+        <swiper-item class="swiper_item">
+          <image src="../../icons/Group10.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+
+        <swiper-item class="swiper_item">
+          <image src="../../icons/Group10.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>  
+</view>

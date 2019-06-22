@@ -1,0 +1,135 @@
+.body{
+  padding: 25rpx 24rpx 0 24rpx;
+  background-color: white;
+}
+.bodys{
+  padding-top:0; 
+}
+page{
+  background-color: #F5F5F5;
+}
+.reason{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 12rpx;
+}
+.mes{
+  padding: 26rpx 6rpx 20rpx 12rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  color: #333333;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.inputs{
+  height: 40rpx;
+  font-size: 26rpx;
+  color: #BBBBBB;
+}
+.inputed{
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  color: #333333;
+}
+.reason_input{
+  flex: 1;
+}
+.reason_mes{
+  font-size: 24rpx;
+  height: 160rpx;
+  padding: 21rpx 24rpx 24rpx;
+  border: 1rpx solid #DDDDDD;
+  border-radius: 5rpx;
+  margin-top: 11rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mes_center{
+  margin-bottom: 16rpx;
+}
+.interviewee{
+  background: white;
+  border-radius: 10rpx;
+  margin: 30rpx auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 33rpx;
+}
+.intervieweeImg{
+  display: flex;
+  align-items: center;
+}
+.interviewee image{
+  width: 92rpx;
+  height: 92rpx;
+  padding-right: 25rpx;
+  border-radius: 5rpx;
+  vertical-align: bottom;
+}
+.user{
+  color: #333333;
+  font-size: 24rpx;
+  margin: 5rpx 0;
+}
+.userName{
+  font-size: 30rpx;
+}
+.userId{
+  background-color: #3E84FF;
+  color: white;
+  font-size: 20rpx;
+  padding: 3rpx 5rpx;
+  margin-right: 9rpx;
+  border-radius: 5rpx;
+}
+.manager{
+  color: #666666;
+}
+.usered{
+  display: flex;
+  justify-content: center;
+}
+.send{
+  background: #3E84FF;
+  color: white;
+  font-size: 38rpx;
+  margin: 51rpx 40rpx 0 40rpx;
+  flex: 1;
+  line-height: 2.5;
+  border-radius: 48rpx;
+  text-align: center;
+  box-shadow: 0px 7px 10px 0px rgba(62,132,255,0.4);
+}
+.end_bc{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 10;
+}
+.timed{
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.time_choose{
+  display: flex;
+  padding: 50rpx 0 70rpx;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
+.endtime{
+  font-size: 32rpx;
+  text-align: center;
+  padding-top: 30rpx;
+}

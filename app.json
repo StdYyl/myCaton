@@ -1,0 +1,48 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/inviteVisitor/index",
+    
+    "pages/staff/invitedRecord",
+    "pages/staff/visitedRecord",
+    "pages/staff/detail",
+    
+    "pages/staff/index",
+    "pages/land_message/land_message",
+    "pages/invited_record/invited_record",
+    "pages/staffApply/index",
+    "pages/real_information/real_information",
+    "pages/visit_record/visit_record",
+    "pages/visitor/index",
+    "pages/visitor/visitorNext",
+    "pages/staff/homepage",
+    "pages/staff/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "卡脸通·智慧园区",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3E84FF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/staff/index",
+        "iconPath": "icons/store.png",
+        "selectedIconPath": "icons/store_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/staff/homepage",
+        "iconPath": "icons/mine.png",
+        "selectedIconPath": "icons/mine_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

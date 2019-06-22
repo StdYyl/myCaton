@@ -1,0 +1,3 @@
+<view class="returnMainPage" bindtap='turnMainPage'>
+  <image src="../../icons/mainpage_white.png" mode="widthFix"></image>
+</view>

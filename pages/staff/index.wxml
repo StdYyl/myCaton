@@ -1,0 +1,90 @@
+<block wx:if="{{type=='staff'}}">
+  <view class="staff_mainpage">
+    <image class="main_img" src="../../icons/Group.png" mode="widthFix"></image>
+    <view class="invite_container">
+      <view class="invitation">
+        <image src="../../icons/sculpture.png" mode="widthFix"></image>
+        <view class="plus"></view>
+        <view class="invitation_text" bindtap='inviteVisitor'>邀请访客</view>
+      </view>
+    </view>
+
+    <view class="visit_container">
+      <view class="visit_title">来访处理</view>
+      <view class="visit_operation">
+        <block wx:if="{{visitedHandleList.length>0}}">
+          <block wx:for="{{visitedHandleList}}" wx:key="{{index}}">
+            <view class="opreation_item">
+              <text class="visitor">{{item.visitor}}</text>
+              <view>
+                <text class="day">{{item.day}}</text>
+                <text class="hour">{{item.hour}}</text>
+              </view>
+              <text class="agree" bindtap='agree' data="{{item.id}}">同意</text>
+            </view>
+
+            <view class="divider"></view>
+          </block>
+        </block>
+        <block wx:if="{{visitedHandleList.length==0}}">
+          <view class="empty">这里空空如也</view>
+        </block>
+      </view>
+    </view>
+
+    <view class="turnover_container">
+      <view class="turnover_title">进出记录</view>
+      <block wx:for="{{turnoverRecordList}}" wx:key="{{index}}">
+        <view class="turnover_record">
+          <view class="record_item">
+            <text class="note {{item.note=='进'?'enter':'out'}}">{{item.note}}</text>
+            <text class="time">{{item.time}}</text>
+            <text class="door">{{item.door}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <block wx:if="{{!loading}}">
+      <view class="loadmore" bindtap='loadMore'>
+        查看更多
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </block>
+    <block wx:if="{{loading}}">
+      <view class="weui-loadmore">
+        <view class="loadmore_text">正在加载更多</view>
+        <view class="weui-loading"></view>
+      </view>
+    </block>
+  </view>
+</block>
+
+
+<block wx:if="{{type=='visitor'}}">
+  <view>
+    <view class='hds'>
+      <image src='../../icons/Group.png' mode='widthFix'></image>
+    </view>
+    <view class='mes'>
+      <view>提示</view>
+      <view class='every_mes' wx:for="{{tipsList}}" wx:key="{{item.index}}">
+        <view class='date'>
+          <view style='color: #999999;'>访问时间:
+            <text style='color:#333333'>{{item.date}} {{item.time}}</text>
+          </view>
+          <view style='color:#3E84FF;font-size:24rpx;'>倒计时{{item.end}}分钟</view>
+        </view>
+        <view style='color: #999999;'>被访人:
+          <text style='color:#333333'>{{item.interviewed}}</text>
+        </view>
+      </view>
+      <view class='end'>
+        <view class='land' bindtap='bindVisitor'>访客登记</view>
+      </view>
+    </view>
+
+  </view>
+</block>
+
+<Return></Return>

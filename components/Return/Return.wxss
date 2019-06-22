@@ -1,0 +1,18 @@
+.returnMainPage{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgb(112, 150, 216);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  z-index: 9999;
+}
+
+.returnMainPage image{
+  width: 60rpx;
+}

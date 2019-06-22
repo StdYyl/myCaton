@@ -1,0 +1,66 @@
+.body{
+  margin: 25rpx 24rpx 0 24rpx;
+}
+.bc{
+  background: #F5F5F5;
+  width: 100%;
+  height: 350rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #BBBBBB;
+  font-size: 24rpx;
+}
+.bc image{
+  width: 42rpx;
+  height: 34rpx;
+}
+
+.bc view{
+  padding-top: 20rpx;
+}
+
+.mes{
+  padding: 26rpx 6rpx 20rpx 12rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #333333;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.inputs{
+  width: 100%;
+  height: 40rpx;
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.mes text{
+  color: #BBBBBB;
+  font-size: 26rpx;
+}
+.car{
+  display: flex;
+}
+.province{
+  border: 1px solid #3E84FF;
+  line-height: 1.5;
+  color:#3E84FF;
+  font-size: 32rpx;
+  padding: 0 27rpx;
+  border-radius: 7rpx;
+  font-weight: bold;
+}
+.next{
+  background: #3E84FF;
+  color: white;
+  font-size: 38rpx;
+  margin: 120rpx 40rpx 0 40rpx;
+  flex: 1;
+  line-height: 2.5;
+  border-radius: 48rpx;
+  text-align: center;
+  box-shadow: 0px 7px 10px 0px rgba(62,132,255,0.4);
+}

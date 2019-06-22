@@ -1,0 +1,212 @@
+input{
+  direction: rtl;
+  text-align: right;
+}
+
+.invitation_page{
+  border-top: 2rpx solid rgba(221, 221, 221, 1);
+  padding: 0 24rpx;
+}
+
+.invitation_container{
+  display: flex;
+  display:-webkit-box;
+  display:-webkit-flex;
+  flex-direction: column;
+}
+
+.info_item{
+  padding:0 0 0 12rpx;
+  border-bottom: 2rpx solid rgba(221, 221, 221, 1);
+  display: flex;
+  display:-webkit-box;
+  display:-webkit-flex;
+  align-items: center;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+}
+
+.header{
+  padding: 28rpx 0;
+  width: 160rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.value{
+  flex: 1;
+  font-size: 26rpx;
+  line-height: 38rpx;
+}
+
+.select{
+  font-size: 26rpx;
+  line-height: 38rpx;
+  color: rgba(187, 187, 187, 1);
+}
+
+.placeholder_style{
+  color: rgba(187, 187, 187, 1);
+}
+
+picker{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.select_wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.textarea_container{
+  padding: 40rpx 0 0 0;
+}
+
+.place_area{
+  font-size: 24rpx;
+  line-height: 34rpx;
+  color: #BBBBBB;
+  vertical-align: top;
+}
+
+.textarea_header{
+  padding: 0 0 12rpx 12rpx;
+  display: flex;
+  flex: 1;
+}
+
+.area{
+  border: 2rpx solid rgba(221, 221, 221, 1);
+  border-radius: 6rpx;
+  height: 160rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  padding: 24rpx;
+  width: 652rpx;
+}
+
+.generateCode{
+  margin: 64rpx 40rpx 0 40rpx;
+  background: #3E84FF;
+  border-radius: 48rpx;
+  padding: 20rpx 202rpx;
+  font-size: 38rpx;
+  line-height: 54rpx;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+/* addmes */
+.mes{
+  background: yellowgreen;
+  line-height: 3;
+  text-align: center;
+  color: white;
+}
+.public_end_bc{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.end_bc{
+  background:rgba(0,0,0,.5); 
+  z-index: 10;
+}
+.end_mes{
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+.end_top{
+  padding: 60rpx 80rpx 0;
+  position: relative;
+  margin-bottom: 160rpx;
+}
+.erwei{
+  padding:  10rpx 0;
+  width: 100%;
+  background-color: white;
+}
+.erwei_mes{
+  margin: 16rpx 24rpx;
+  border: 1rpx solid #C69950;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.erwei_pc{
+  margin:52rpx 0 22rpx;
+  width:217rpx;
+  height:217rpx;
+}
+.title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.title_user{
+  font-size: 32rpx;
+  padding:3rpx 0 14rpx;
+}
+.phone{
+  font-size: 24rpx;
+  color: #666666;
+}
+.titile_end{
+  color: #78518F;
+  font-size: 18rpx;
+  padding: 77rpx 0 100rpx;
+}
+.bottom_pc{
+  position: absolute;
+  left: 60rpx;
+  right: 60rpx;
+  bottom: -100rpx;
+  z-index: 30;
+}
+.bottom_bg{
+  z-index:-1;
+  bottom: 50rpx;
+}
+.keep{
+  text-align: center;
+  padding: 30rpx 0;
+  font-size: 30rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+.keeps{
+  border-bottom: 25rpx solid #f2F2F2;
+}
+.animation_come{
+  animation: animation_come 1s;
+}
+@keyframes animation_come{
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+.animation_out{
+  animation: animation_out 1s;
+}
+@keyframes animation_out{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-130%)
+  }
+}
+
+.myCanvas{
+  position: fixed;
+  bottom: 99999rpx;
+  z-index: -999999;
+}

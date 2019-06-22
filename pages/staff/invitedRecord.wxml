@@ -1,0 +1,27 @@
+<view class="invitedRecord_Container">
+  <view class="search">
+    <view class="search_frame">
+      <icon type="search" size='14' color='#CCCCCC'></icon>
+      <input class="search_text" placeholder='搜索姓名/手机号' placeholder-class='place_search_text'></input>
+    </view>
+  </view>
+  <block wx:for="{{visitedList}}" wx:key="{{index}}">
+    <view class="recording">
+      <view class="record_item">
+        <view class="before">
+          <view class="nickname">{{item.nickname}}</view>
+          <view class="info">
+            <view class="top">
+              <text class="name">{{item.visitor}}</text>
+              <text class="time">{{item.day}}</text>
+            </view>
+            <view class="bottom">{{item.reason}}</view>
+          </view>
+        </view>
+        <view class="after" bindtap='inviteAgain' data-id="{{item.id}}">再次邀请</view>
+      </view>
+    </view>
+  </block>
+
+  
+</view>
